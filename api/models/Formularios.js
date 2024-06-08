@@ -9,6 +9,7 @@ const formularioSchema = new mongoose.Schema({
     data: { type: Date },
     formHtml: { type: String },
     conteudo: { type: JSON, require: true },
+    imagem: { type: String }
 }, { versionKey: false });
 
 const formulario = mongoose.model("formulario", formularioSchema);
