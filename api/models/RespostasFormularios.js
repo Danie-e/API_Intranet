@@ -8,6 +8,7 @@ const respostaFormularioSchema = new mongoose.Schema({
     idUsuario: { type: String, required: true },
     data: { type: Date },
     conteudo: { type: JSON, require: true },
+    imagem: { type: String }
 }, { versionKey: false });
 
 const respostaFormulario = mongoose.model("respostaFormulario", respostaFormularioSchema);
