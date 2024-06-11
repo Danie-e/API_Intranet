@@ -22,4 +22,4 @@ const sugestoesPDISchema = new mongoose.Schema({
 
 const sugestoespdi = mongoose.model("sugestoespdi", sugestoesPDISchema);
 
-export { sugestoespdi, sugestoesPDISchema}
+export { sugestoespdi}
