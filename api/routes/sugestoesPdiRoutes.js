@@ -1,5 +1,5 @@
 import express from "express";
-import sugestoesPDIController from "./controller/SugestoesPdiController.js"; // Importando o PDIController
+import sugestoesPDIController from "../controller/sugestoesPdiController.js"; // Importando o PDIController
 
 const routes = express.Router();
 
