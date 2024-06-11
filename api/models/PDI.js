@@ -22,4 +22,4 @@ const PDISchema = new mongoose.Schema({
 
 const pdi = mongoose.model("pdi", PDISchema);
 
-export { pdi}
+export { pdi, PDISchema}
