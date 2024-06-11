@@ -1,4 +1,4 @@
-import { sugestoespdi } from "../models/SugestoesPDI.js";
+import { sugestoespdi } from "../models/SugestoesPdi.js";
 //import { usuarios } from "../models/Usuario.js";
 
 class sugestoesPDIController {
