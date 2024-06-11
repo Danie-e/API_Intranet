@@ -1,7 +1,7 @@
 import express from "express";
 import UsuarioController from "../controller/usuarioController.js";
 
-const routes= express.Router();
+const routes = express.Router();
 
 routes.get("/usuarios", UsuarioController.listarUsuarios);
 routes.get("/usuarios/:id", UsuarioController.procurarUsuario);
