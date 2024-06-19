@@ -6,7 +6,8 @@ const usuariosSchema = new mongoose.Schema({
   senha: { type: String },
   equipe: { type: String },
   tipo: { type: Number },
-  imagem: { type: String }
+  imagem: { type: String },
+  dataAdmissional:{type:Date},
 }, { versionKey: false });
 
 const usuarios = mongoose.model("usuarios", usuariosSchema);

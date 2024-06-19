@@ -40,7 +40,8 @@ class UsuarioController {
 
     static async cadastrarUsuario(req, res) {
         try {
-            const novoUsuario = await usuarios.create(req.body);
+            const usuario ={...req.body, dataAdmissional:Date()}
+            const novoUsuario = await usuarios.create(usuario);
             res.status(201).json({ message: "Usuario cadastrado com sucesso", usuarios: novoUsuario });
         }
         catch (erro) {
