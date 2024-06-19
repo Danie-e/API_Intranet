@@ -9,7 +9,7 @@ const PDISchema = new mongoose.Schema({
   linkTarefa1: { type: String },
   status: { type: Boolean },
   prazo: { type: Date },
-  autor: { type: String },
+  autor: { type: mongoose.Schema.Types.ObjectId },
 }, { versionKey: false });
 
 const pdi = mongoose.model("pdi", PDISchema);

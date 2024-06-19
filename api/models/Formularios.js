@@ -5,7 +5,7 @@ import { json } from "express";
 const formularioSchema = new mongoose.Schema({
     id: { type: mongoose.Schema.Types.ObjectId },
     titulo: { type: String, required: true },
-    autor: { type: String, required: true },
+    autor: { type: mongoose.Schema.Types.ObjectId , required: true },
     data: { type: Date },
     formHtml: { type: String },
     conteudo: { type: JSON, require: true },
