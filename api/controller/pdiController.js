@@ -52,7 +52,7 @@ class PDIController {
             // //Criar o PDI
             // const pdiCriado = await pdi.create(cadastroPDI);
             const pdiCriado = await pdi.create(novoPDI);
-            res.status(201).json({ message: "Criado com sucesso", pdi: pdiCriado });
+            res.status(201).json({ message: "Criado com sucesso!", pdi: pdiCriado });
         } catch (error) {
             res.status(500).json({ message: `${error.message} - Falha ao cadastrar PDI.` });
         }

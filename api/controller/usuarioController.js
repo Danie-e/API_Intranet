@@ -42,7 +42,7 @@ class UsuarioController {
         try {
             const usuario ={...req.body, dataAdmissional:Date()}
             const novoUsuario = await usuarios.create(usuario);
-            res.status(201).json({ message: "Usuario cadastrado com sucesso", usuarios: novoUsuario });
+            res.status(201).json({ message: "Usuário cadastrado com sucesso!", usuarios: novoUsuario });
         }
         catch (erro) {
             res.status(500)
@@ -54,7 +54,7 @@ class UsuarioController {
         try {
             const id = req.params.id;
             await usuarios.findByIdAndUpdate(id, req.body);
-            res.status(200).json({ message: "Usuario foi atualizado." });
+            res.status(200).json({ message: "Usuário foi atualizado." });
         }
         catch (erro) {
             res.status(500)
@@ -66,11 +66,11 @@ class UsuarioController {
         try {
             const id = req.params.id;
             await usuarios.findByIdAndDelete(id, req.body);
-            res.status(200).json({ message: "Usuario foi excluido com sucesso." });
+            res.status(200).json({ message: "Usuário foi excluido com sucesso." });
         }
         catch (erro) {
             res.status(500)
-                .json({ message: `${erro.message} - falha na requisição do usuario.` });
+                .json({ message: `${erro.message} - falha na requisição do usuário.` });
         }
     };
 
